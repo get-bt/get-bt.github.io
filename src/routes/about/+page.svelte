@@ -5,7 +5,7 @@
 
 
 <div>
-    <a href="/about">About</a>
+    <a href="/">Back</a>
 
 </div>
 
