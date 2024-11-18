@@ -16,12 +16,10 @@ const config = {
 			// these options are set automatically — see below
 			pages: 'build',
 			assets: 'build',
-			appDir: 'app',
 			fallback: undefined,
 			precompress: false,
 			strict: true
 		}),
-		paths: {base: dev ? "" : "/get-bt.github.io"}
 	}
 };
 
