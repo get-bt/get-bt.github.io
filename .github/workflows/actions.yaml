@@ -34,6 +34,11 @@ jobs:
         
       - name: list
         run: ls -la
+
+      - uses: actions/upload-artifact@master
+        with:
+          name: build-artifact
+          path: build
   deploy:
     needs: build
     environment:
@@ -41,6 +46,10 @@ jobs:
       url: https://get-bt.github.io/
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/download-artifact@master
+        with:
+          name: build-artifact
+          path: build
       - name: list
         run: ls -la
       - name: Setup Pages
